@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="380dp"
+    android:background="@drawable/rounded_card"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:id="@+id/txt_my_love"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="MY LOVE,"
+        android:textColor="#0000FF"
+        android:textSize="20sp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_margin="20dp"/>
+
+    <TextView
+        android:id="@+id/txt_flower"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="YOU LIKE A FLOWER"
+        android:textColor="#0000FF"
+        android:textSize="20sp"
+        app:layout_constraintTop_toBottomOf="@id/txt_my_love"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="20dp"/>
+    <ImageView
+        android:id="@+id/icon_star"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:src="@drawable/ic_star"
+        app:layout_constraintTop_toBottomOf="@id/txt_flower"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_margin="20dp"/>
+
+    <TextView
+        android:id="@+id/txt_editor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Editor's choice"
+        android:textSize="16sp"
+        android:textColor="#C62828"
+        app:layout_constraintLeft_toRightOf="@id/icon_star"
+        app:layout_constraintTop_toBottomOf="@id/txt_flower"
+        android:layout_marginTop="20dp"/>
+
+    <TextView
+        android:id="@+id/txt_big_paragraph"
+        android:layout_width="380dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/txt_editor"
+        android:text="@string/big_paragraph"
+        android:textColor="#0000FF"
+        android:textSize="17sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_margin="20dp" />
+
+    <TextView
+        android:id="@+id/txt_short_paragraph"
+        android:layout_width="380dp"
+        android:layout_height="wrap_content"
+        android:text=""
+        app:layout_constraintTop_toBottomOf="@id/txt_big_paragraph"
+        android:textColor="#0000FF"
+        android:textSize="17sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_margin="20dp"/>
+
+    <TextView
+        android:id="@+id/txt_99.9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="$9.99"
+        android:textSize="20sp"
+        android:textColor="#0000FF"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_margin="20dp"/>
+
+    <Button
+        android:id="@+id/btn_order_now"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ORDER NOW"
+        android:textColor="#ECF0F5"
+        android:background="@drawable/rounded_btn"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_margin="20dp"/>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
